@@ -10,6 +10,7 @@ services:
   mongo:
     image: mongo:8.0.6
     restart: always
+    container_name: nestjs-backend
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${DATABASE_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${DATABASE_PASSWORD}
