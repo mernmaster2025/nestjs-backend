@@ -14,7 +14,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: ${DATABASE_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${DATABASE_PASSWORD}
     volumes:
-      - boilerplate-mongo-db:/data/db
+      - nestjs-backend:/data/db
     ports:
       - ${DATABASE_PORT}:27017
 
@@ -42,4 +42,4 @@ services:
       - ${APP_PORT}:${APP_PORT}
 
 volumes:
-  boilerplate-mongo-db:
+  nestjs-backend:
